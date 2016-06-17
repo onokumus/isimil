@@ -1,0 +1,28 @@
+{
+  "name": "isimil",
+  "version": "0.1.0",
+  "description": "il isimlerini rastgele getirir",
+  "main": "src/index.js",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onokumus/isimil.git"
+  },
+  "keywords": [
+    "rastgele",
+    "il",
+    "isim"
+  ],
+  "author": "Osman Nuri Okumuş <onokumus@gmail.com> (https://github.com/onokumus)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onokumus/isimil/issues"
+  },
+  "homepage": "https://github.com/onokumus/isimil#readme"
+}
