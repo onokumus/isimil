@@ -7,14 +7,12 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
-    "commitizen": "2.8.2",
-    "cz-conventional-changelog": "1.1.6",
     "mocha": "2.5.3",
     "semantic-release": "^4.3.5"
   },
   "scripts": {
-    "commit": "git-cz",
     "test": "mocha src/index.test.js -w",
+    "test:single": "mocha src/index.test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -31,8 +29,5 @@
   "bugs": {
     "url": "https://github.com/onokumus/isimil/issues"
   },
-  "homepage": "https://github.com/onokumus/isimil#readme",
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
-  }
+  "homepage": "https://github.com/onokumus/isimil#readme"
 }
