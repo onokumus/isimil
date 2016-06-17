@@ -1,6 +1,5 @@
 {
   "name": "isimil",
-  "version": "1.0.0",
   "description": "il isimlerini rastgele getirir",
   "main": "src/index.js",
   "dependencies": {
@@ -8,14 +7,19 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
-    "mocha": "2.5.3"
+    "commitizen": "2.8.2",
+    "cz-conventional-changelog": "1.1.6",
+    "mocha": "2.5.3",
+    "semantic-release": "^4.3.5"
   },
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "commit": "git-cz",
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/onokumus/isimil.git"
+    "url": "https://github.com/onokumus/isimil.git"
   },
   "keywords": [
     "rastgele",
@@ -27,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/onokumus/isimil/issues"
   },
-  "homepage": "https://github.com/onokumus/isimil#readme"
+  "homepage": "https://github.com/onokumus/isimil#readme",
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  }
 }
