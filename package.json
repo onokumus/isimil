@@ -3,7 +3,7 @@
   "description": "il isimlerini rastgele getirir",
   "main": "src/index.js",
   "dependencies": {
-    "unique-random-array": "1.0.0"
+    "unique-random-array": "3.0.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
