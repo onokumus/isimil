@@ -61,7 +61,8 @@ npm run build     # dist/ derleme
 ## CI / Yayınlama
 
 - **CI**: GitHub Actions (`node 22` ve `node 24` matrisinde tip kontrolü, test ve build).
-- **Yayın**: `v*` etiketi push edildiğinde otomatik `npm publish --provenance` (npm token gerekir).
+- **Release tag check**: `v*` etiketi push edildiğinde otomatik doğrulama (tip kontrolü + test + build) çalışır.
+- **npm'e yayınlama**: manuel olarak yapılır. `npm publish` çalıştırıldığında `prepublishOnly` hook'u otomatik olarak `check` ve `build` adımlarını çalıştırır.
 
 ## Lisans
 
