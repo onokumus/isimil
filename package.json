@@ -1,28 +1,45 @@
 {
   "name": "isimil",
-  "description": "il isimlerini rastgele getirir",
-  "main": "src/index.js",
-  "dependencies": {
-    "unique-random-array": "3.0.0"
+  "version": "2.0.0",
+  "description": "Rastgele Türkiye ili adı döndüren, sıfır bağımlılıklı, TypeScript destekli npm paketi",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
   },
-  "devDependencies": {
-    "chai": "3.5.0",
-    "mocha": "2.5.3",
-    "semantic-release": "^4.3.5"
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.18.0"
   },
   "scripts": {
-    "test": "mocha src/index.test.js -w",
-    "test:single": "mocha src/index.test.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test src/",
+    "check": "npm run typecheck && npm test",
+    "prepublishOnly": "npm run check && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "typescript": "^5.9.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/onokumus/isimil.git"
   },
   "keywords": [
-    "rastgele",
+    "türkiye",
     "il",
-    "isim"
+    "isim",
+    "rastgele",
+    "province",
+    "random"
   ],
   "author": "Osman Nuri Okumuş <onokumus@gmail.com> (https://github.com/onokumus)",
   "license": "MIT",
